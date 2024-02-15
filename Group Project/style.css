@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;  /* Use a common, web-safe font */
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;  /* Add a subtle background color */
+    display: flex;          /* Wrap header and main sections */
+    flex-direction: column;  /* Stack them vertically */
+    min-height: 100vh;     /* Ensure content fills the viewport */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;  /* Set a darker header background */
+    color: #fff;          /* Light text for contrast */
+    width: 100%;          /* Make header span the full width */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;        /* Allow sections to wrap on smaller screens */
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;          /* Ensure main content spans full width */
+}
+
+section {
+    box-sizing: border-box; /* Include padding/border in width/height */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(33% - 20px);  /* Set individual section width for 3 columns */
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;      /* Ensure image fills container proportionally */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;      /* Push footer to bottom */
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;          /* Make footer span full width */
+}
+
+/* Optional media query for adjusting layout on smaller screens */
+@media (max-width: 768px) {
+    section {
+        width: calc(50% - 20px); /* Adjust width for 2 columns on smaller screens */
+    }
+}
